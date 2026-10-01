@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "feed_interact": {
+      "trigger": "minecraft:player_interacted_with_entity"
+    },
+    "feed_consume": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:glow_berries"
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["feed_interact", "feed_consume"]
+  ],
+  "rewards": {
+    "function": "easy_froglight:on_feed"
+  }
+}
